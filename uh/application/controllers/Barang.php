@@ -29,6 +29,7 @@ class Barang extends CI_Controller
         <td>Harga</td></td>
         <td>Nama Admin</td>
         <td>Tanggal</td>
+        <td>Gambar</td>
         <td>Aksi</td>
         </tr>';
 
@@ -181,6 +182,7 @@ class Barang extends CI_Controller
         <td>Harga</td></td>
         <td>Nama Admin</td>
         <td>Tanggal</td>
+        <td>Gambar</td>
         <td>Aksi</td>
         </tr>';
 
@@ -192,6 +194,7 @@ class Barang extends CI_Controller
             <td>' . $value->harga . '</td>
             <td>' . $value->nama_admin . '</td>
             <td>' . $value->tanggal . '</td>
+            <td><img src="' . base_url() . 'foto/' . $value->id_barang . '/' . $value->foto_produk . '"width="50"></td>
             <td>Read | <a href="#' . $value->id_barang . '" class="linkHapusBarang">Hapus</a> | <a href="#' . $value->id_barang . '" class="linkEditBarang">Edit</a></td>
             </tr>';
         }
