@@ -147,8 +147,6 @@ form-control-line form-user-input" name="nama_admin" id="nama_admin">
         $(".upload-area > h2").text("File yang dipilih : " + file.name);
     });
 
-
-
     $('.upload-area').on('dragover', function(e) {
         e.stopPropagation();
         e.preventDefault();
